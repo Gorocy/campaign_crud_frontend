@@ -6,15 +6,8 @@ import React, { useState, useEffect } from 'react';
 function App() {
    useEffect(() => {
     const token = localStorage.getItem('jwtToken');
-    if (token) {
-      setIsAuthenticated(true);
-    }
   }, []);
 
-  const logout = () => {
-    localStorage.removeItem('jwtToken');
-    setIsAuthenticated(false);
-  };
 
   return (
     <div className="App">
