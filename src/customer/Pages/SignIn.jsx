@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
-  const [username, setUsername] = useState('');
+  const [email, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const credentials = { username, password };
-    const response = await fetch('https://example.com/api/login', {
+    const credentials = { email, password };
+    const response = await fetch('http://localhost:8080/api/auth/authenticate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -33,10 +33,10 @@ const SignIn = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>
-            Username:
+            Username(email):
             <input
               type="text"
-              value={username}
+              value={email}
               onChange={(e) => setUsername(e.target.value)}
               required
             />

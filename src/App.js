@@ -1,19 +1,18 @@
 import './App.css';
 import CustomerRouters from './customer/Routers/CustomerRouters';
 import { Route, Routes } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import React /*, { useEffect }*/ from 'react';
 
 function App() {
-   useEffect(() => {
-    const token = localStorage.getItem('jwtToken');
-  }, []);
+  //  useEffect(() => {
+  //   const token = localStorage.getItem('jwtToken');
+  // }, []);
 
 
   return (
     <div className="App">
       <Routes>
         <Route path="/*" element={<CustomerRouters />}>
-
         </Route>
       </Routes>
     </div>

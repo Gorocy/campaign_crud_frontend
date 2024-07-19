@@ -5,6 +5,10 @@ import Home from '../Pages/Home';
 import Navigation from '../components/Navigation';
 import SignIn from '../Pages/SignIn';
 import SignUp from '../Pages/SignUp';
+import PostCamapaign from '../Pages/PostCampaign';
+import CampaignDetail from './CampaignDetail';
+import MyCampaigns from '../Pages/MyCampaigns';
+import CampaignPut from './CampaignPut';
 
 const CustomerRouters = () => {
 
@@ -24,6 +28,13 @@ const CustomerRouters = () => {
 
                 <Route path='/sign-up' element={<SignUp />}></Route>
 
+                <Route path='/post-campaign' element={<PostCamapaign />}></Route>
+
+                <Route path="/campaigns/:id" element={<CampaignDetail />} />
+
+                <Route path="/my-campaigns" element={<MyCampaigns />} />
+
+                <Route path="/campaigns-update/:id" element={<CampaignPut />} />
             </Routes>
 
         </div>

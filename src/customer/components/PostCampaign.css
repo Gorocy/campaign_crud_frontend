@@ -1,0 +1,48 @@
+.post-campaign {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .post-campaign-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .post-campaign-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .post-campaign-form .form-group input[type="text"],
+  .post-campaign-form .form-group input[type="number"],
+  .post-campaign-form .form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .post-campaign-form .form-group-checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-campaign-form .form-group-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .post-campaign-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .post-campaign-form button:hover {
+    background-color: #0056b3;
+  }
