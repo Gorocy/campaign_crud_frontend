@@ -81,6 +81,7 @@ const CampaignPut = () => {
                 body: JSON.stringify(formData)
             });
             if (response.ok) {
+                alert('Successfully created campaign');
                 navigate('/');
             } else {
                 throw new Error('Failed to update campaign');

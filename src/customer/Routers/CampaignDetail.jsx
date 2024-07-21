@@ -26,6 +26,7 @@ const CampaignDetail = () => {
       <p><strong>Town:</strong> {campaign.town}</p>
       <p><strong>Radius:</strong> {campaign.radius} km</p>
       <p><strong>User:</strong> {campaign.user.firstName} {campaign.user.lastName}</p>
+      <p><strong>Product:</strong> {campaign.product.name}</p>
     </div>
   );
 };

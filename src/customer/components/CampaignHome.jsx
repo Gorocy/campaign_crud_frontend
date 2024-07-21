@@ -19,7 +19,7 @@ const CampaignHome = ({ campaign }) => {
         flexDirection: 'column',
         alignItems: 'flex-start',
         width: '300px', 
-        height: '400px',
+        height: '500px',
         boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
         transition: '0.3s',
         borderRadius: '25px',
@@ -34,6 +34,8 @@ const CampaignHome = ({ campaign }) => {
       <p><strong>Town:</strong> {campaign.town}</p>
       <p><strong>Radius:</strong> {campaign.radius} km</p>
       <p><strong>User:</strong> {campaign.user.firstName} {campaign.user.lastName}</p>
+      <p><strong>Contact:</strong> {campaign.user.email}</p>
+      <p><strong>Product:</strong> {campaign.product.name}</p>
     </div>
   );
 };

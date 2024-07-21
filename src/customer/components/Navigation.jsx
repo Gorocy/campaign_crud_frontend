@@ -22,12 +22,8 @@ const Navigation = () => {
                         Home
                     </NavLink>
                     
-                    <NavLink to="/sign-up">
-                        Sign Up
-                    </NavLink>
-
-                    <NavLink to="/sign-in">
-                        Sign In
+                    <NavLink to="/post-product">
+                        Post Product
                     </NavLink>
 
                     <NavLink to="/post-campaign">
@@ -36,6 +32,14 @@ const Navigation = () => {
 
                     <NavLink to="/my-campaigns">
                         My Campaigns
+                    </NavLink>
+
+                    <NavLink to="/sign-up">
+                        Sign Up
+                    </NavLink>
+
+                    <NavLink to="/sign-in">
+                        Sign In
                     </NavLink>
                 </NavMenu>
                 

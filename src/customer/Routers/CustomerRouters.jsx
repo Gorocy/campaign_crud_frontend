@@ -6,6 +6,7 @@ import Navigation from '../components/Navigation';
 import SignIn from '../Pages/SignIn';
 import SignUp from '../Pages/SignUp';
 import PostCamapaign from '../Pages/PostCampaign';
+import PostProduct from '../Pages/PostProduct';
 import CampaignDetail from './CampaignDetail';
 import MyCampaigns from '../Pages/MyCampaigns';
 import CampaignPut from './CampaignPut';
@@ -24,9 +25,7 @@ const CustomerRouters = () => {
 
                 <Route path='/about' element={<About />}></Route>
 
-                <Route path='/sign-in' element={<SignIn />}></Route>
-
-                <Route path='/sign-up' element={<SignUp />}></Route>
+                <Route path='/post-product' element={<PostProduct />}></Route>
 
                 <Route path='/post-campaign' element={<PostCamapaign />}></Route>
 
@@ -35,6 +34,10 @@ const CustomerRouters = () => {
                 <Route path="/my-campaigns" element={<MyCampaigns />} />
 
                 <Route path="/campaigns-update/:id" element={<CampaignPut />} />
+
+                <Route path='/sign-in' element={<SignIn />}></Route>
+
+                <Route path='/sign-up' element={<SignUp />}></Route>
             </Routes>
 
         </div>
