@@ -1,3 +1,40 @@
+# Important Fetch 
+## Fetch : http://localhost:8080/api
+
+# Home Page 
+
+![image](https://github.com/user-attachments/assets/1293237b-c8a3-4426-a5bf-70c204022b8a)
+
+# Sign up
+
+![image](https://github.com/user-attachments/assets/3cc02613-4a93-403c-b95c-1f699a3459fc)
+
+# Sign in
+
+![image](https://github.com/user-attachments/assets/622a9f84-f500-4b92-b409-452825232294)
+
+# Campaign site (click on campaign in Home)
+
+![image](https://github.com/user-attachments/assets/ab4fc910-26af-4d0d-b72e-a5b515d58aab)
+
+# Post Product
+
+![image](https://github.com/user-attachments/assets/0e8bc784-2637-4e69-8b5b-73b0aa46e38d)
+
+# Post Campaign
+
+![image](https://github.com/user-attachments/assets/81378f76-4f0a-4b0e-911f-ccf9f1c27dfe)
+
+# My Campaigns
+## User w JWT can check his campaigns and delete or update them
+![image](https://github.com/user-attachments/assets/17ee3e44-c50e-41ed-9d0a-824f01f010b9)
+
+# Update a Campaign
+## Similar to post, bit without change of product
+![image](https://github.com/user-attachments/assets/bb3d9ab7-7fd5-4a78-acbb-5e1010d8a770)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
