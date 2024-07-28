@@ -6,6 +6,7 @@ import {
     Bars,
     NavMenu
 } from "./navbarElements";
+import Balance from "./Balance.jsx";
 
 const Navigation = () => {
     return (
@@ -43,6 +44,8 @@ const Navigation = () => {
                     </NavLink>
                 </NavMenu>
                 
+                <Balance/>
+
             </Nav>
         </>
     );

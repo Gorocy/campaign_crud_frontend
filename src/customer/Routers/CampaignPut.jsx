@@ -81,6 +81,8 @@ const CampaignPut = () => {
                 body: JSON.stringify(formData)
             });
             if (response.ok) {
+                const event = new Event("refreshBalance");
+                dispatchEvent(event);
                 alert('Successfully created campaign');
                 navigate('/');
             } else {

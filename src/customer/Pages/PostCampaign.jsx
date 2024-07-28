@@ -78,7 +78,7 @@ const PostCampaign = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
+
     console.log(formData);
     fetch('http://localhost:8080/api/campaigns/create', {
       method: 'POST',
@@ -107,6 +107,8 @@ const PostCampaign = () => {
       })
       .then(data => {
         console.log('Campaign posted successfully:', data);
+        const event = new Event("refreshBalance");
+        dispatchEvent(event);
         alert('Successfully created campaign');
         navigate('/');
       })
@@ -184,7 +186,7 @@ const PostCampaign = () => {
         <div className="form-group">
           <label>Product:</label>
           <select
-            name="productId" 
+            name="productId"
             value={formData.productId}
             onChange={handleChange}
             required

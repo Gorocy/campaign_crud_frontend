@@ -21,6 +21,8 @@ const SignIn = () => {
       const data = await response.json();
       const token = data.token;
       localStorage.setItem('jwtToken', token);
+      const event = new Event("refreshBalance");
+      dispatchEvent(event);
       navigate('/');
     } else {
       console.error('Login failed');

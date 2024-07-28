@@ -9,7 +9,7 @@ const CompaignMyHome = ({ campaign, fetchCampaigns }) => {
     };
 
     const deleteCampaign = async (id) => {
-        const token = localStorage.getItem('jwtToken');
+        const token = localStorage.getItem('jwtToken');        
         try {
             const response = await fetch(`http://localhost:8080/api/campaigns/delete/${id}`, {
                 method: 'DELETE',
@@ -20,6 +20,8 @@ const CompaignMyHome = ({ campaign, fetchCampaigns }) => {
             });
             if (response.ok) {
                 fetchCampaigns(token);
+                const event = new Event("refreshBalance");
+                dispatchEvent(event);
             } else {
                 throw new Error('Failed to delete campaign');
             }
